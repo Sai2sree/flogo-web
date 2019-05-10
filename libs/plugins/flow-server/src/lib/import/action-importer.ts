@@ -119,7 +119,7 @@ function makeValidator(installedRefs: string[], importsRefAgent: ImportsRefAgent
   return createValidator(
     {
       $schema: 'http://json-schema.org/draft-07/schema#',
-      $id: 'http://github.com/project-flogo/webui/schemas/1.0.0/flowResource.json',
+      $id: 'http://github.com/project-flogo/flogo-web/schemas/1.0.0/flowResource.json',
       additionalProperties: true,
       required: ['data'],
       properties: {

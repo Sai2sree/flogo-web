@@ -19,7 +19,7 @@ You can find a more complete start guide for the official Docker image in the [P
 
 ## Issues, Bug Reports and Feature Requests
 
-Check out our [issue tracker](https://github.com/TIBCOSoftware/flogo-web/issues).
+Check out our [issue tracker](https://github.com/project-flogo/flogo-web/issues).
 
 If you have any questions, feel free to post an issue and tag it as a question, email flogo-oss@tibco.com or chat with the team and community:
 
@@ -47,7 +47,7 @@ Let's bootstrap the project, in a terminal run the following:
 
 ```bash
 # Get the Flogo Web UI source from GitHub
-git clone https://github.com/project-flogo/webui.git
+git clone https://github.com/project-flogo/flogo-web.git
 
 # Go to the directory
 cd webui
@@ -111,7 +111,7 @@ Before starting make sure you have Docker installed and then from a terminal run
 
 ```bash
 # Get the Flogo Web UI source from GitHub
-git clone https://github.com/project-flogo/webui.git
+git clone https://github.com/project-flogo/flogo-web.git
 
 # Go to the directory
 cd webui

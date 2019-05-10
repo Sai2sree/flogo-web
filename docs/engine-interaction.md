@@ -4,7 +4,7 @@ This document explains how the flogo-web server interacts with the Flogo CLI to 
 
 > :warning: For a better understanding of this document you will need first to get familiar with the usage of the [Flogo CLI](https://github.com/project-flogo/cli).
 
-> :computer: Most of the code that deals with the engine management can be found at [`apps/server/src/modules/engine`](https://github.com/TIBCOSoftware/flogo-web/tree/master/apps/server/src/modules/engine)
+> :computer: Most of the code that deals with the engine management can be found at [`apps/server/src/modules/engine`](https://github.com/project-flogo/flogo-web/tree/master/apps/server/src/modules/engine)
 
 There's only one design time engine per Flogo Web instance. Flogo apps are not persisted into this engine, instead the Flogo Web
 has a database where it stores all the applications created and imported by the user. This is because for test-running a flow
@@ -35,7 +35,7 @@ create a new one by running:
 flogo create -f default-app.json flogo-web
 ```
 
-- [default-app.json](https://github.com/TIBCOSoftware/flogo-web/blob/master/apps/server/src/config/default-flogo.json) is a
+- [default-app.json](https://github.com/project-flogo/flogo-web/blob/master/apps/server/src/config/default-flogo.json) is a
   flogo.json with the minimum properties required by the flogo-cli create command. It doesn't declare any activities or
   triggers to allow the next step to install all the default contributions.
 
@@ -59,7 +59,7 @@ First step is to create a dynamic [contribution bundle](https://github.com/proje
 flogo install --file /path/to/generated.plugin.bundle.json
 ```
 
-The second step is to install the default contribution bundle. The [`default-bundle.json`](https://github.com/TIBCOSoftware/flogo-web/blob/master/apps/server/src/config/default-contrib-bundle.json) describes the contributions to be included by default in the engine and made available to be used in the UI. During engine creation the default bundle can be switched by setting the environment variable `FLOGO_WEB_DEFAULT_PALETTE` to point to the location of another bundle in the filesystem.
+The second step is to install the default contribution bundle. The [`default-bundle.json`](https://github.com/project-flogo/flogo-web/blob/master/apps/server/src/config/default-contrib-bundle.json) describes the contributions to be included by default in the engine and made available to be used in the UI. During engine creation the default bundle can be switched by setting the environment variable `FLOGO_WEB_DEFAULT_PALETTE` to point to the location of another bundle in the filesystem.
 
 ### Every time the app starts
 

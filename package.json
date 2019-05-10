@@ -5,7 +5,7 @@
   "license": "BSD-3-Clause",
   "private": true,
   "repository": {
-    "url": "https://github.com/project-flogo/webui.git"
+    "url": "https://github.com/project-flogo/flogo-web.git"
   },
   "scripts": {
     "ng": "ng",
